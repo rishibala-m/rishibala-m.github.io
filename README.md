@@ -25,7 +25,7 @@
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>You can reach me at email@example.com</p>
+            <p>You can reach me at email@balarishi213@gmail.com</p>
         </section>
     </main>
     <footer>
