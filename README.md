@@ -21,7 +21,7 @@
                 <h3>SUBRAMANIYAN , ARYALEESWARI</h3>
                 <h3>MURUGAN,SUTHA</h3>
                 <p>.</p>
-                <img src="/Users/rishibala/Downloads" alt="Project Image">
+                <img src="/Users/rishibala/Downloads", alt="Project Image">
                 <a href="#" class="button">Learn More</a>
             </div>
             <!-- Add more projects here -->
