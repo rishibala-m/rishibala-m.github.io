@@ -18,8 +18,10 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project Title</h3>
-                <p>Description of the project.</p>
+                <h3>cogni guide </h3>
+                <p>CogniGuide is an innovative web application designed to enhance cognitive abilities through personalized training programs. The platform incorporates elements of cognitive psychology, neuroscience, and gamification to provide users with engaging and effective cognitive exercises.
+
+.</p>
             </div>
             <!-- Add more projects here -->
         </section>
@@ -29,7 +31,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 rishibala</p>
     </footer>
 </body>
 </html>
