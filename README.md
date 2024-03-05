@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Luv  yew sushmaa</h1>
     </header>
     <main>
         <section id="about">
