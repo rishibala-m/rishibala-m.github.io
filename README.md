@@ -19,7 +19,8 @@
             <h2>GREATINGS FROM </h2>
             <div class="project">
                 <h3>SUBRAMANIYAN , ARYALEESWARI</h3>
-                <p>MURUGAN,SUTHA.</p>
+                <h3>MURUGAN,SUTHA</h3>
+                <p>.</p>
                 <img src="project_image.jpg" alt="Project Image">
                 <a href="#" class="button">Learn More</a>
             </div>
