@@ -20,8 +20,7 @@
             <div class="project">
                 <h3>SUBRAMANIYAN , ARYALEESWARI</h3>
                 <h3>MURUGAN,SUTHA</h3>
-                <p>.</p>
-                <img src="/Users/rishibala/Downloads", alt="Project Image">
+              
                 <a href="#" class="button">Learn More</a>
             </div>
             <!-- Add more projects here -->
@@ -29,11 +28,11 @@
         <section id="contact">
             <h2>Contact Me</h2>
             <p>You can reach me at email@example.com</p>
-            <a href="mailto:email@example.com" class="button">Email Me</a>
+            <a href="mailto:BALARISHI213@GMAIL.COM" class="button">Email Me</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024RISHISUSHMA</p>
     </footer>
 </body>
 </html>
