@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,30 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Luv  yew sushmaa</h1>
+        <h1>RISHI WEDS SUSHMA</h1>
     </header>
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>In love with sushma 24/7.</p>
+            <h2>DATE AND VENUE</h2>
+            <p>22.11.2025 AND SHIVAN TEMPLE ,PARAMAKUDI.</p>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>GREATINGS FROM </h2>
             <div class="project">
-                <h3>cogni guide </h3>
-                <p>CogniGuide is an innovative web application designed to enhance cognitive abilities through personalized training programs. The platform incorporates elements of cognitive psychology, neuroscience, and gamification to provide users with engaging and effective cognitive exercises.
-
-.</p>
+                <h3>SUBRAMANIYAN , ARYALEESWARI</h3>
+                <p>MURUGAN,SUTHA.</p>
+                <img src="project_image.jpg" alt="Project Image">
+                <a href="#" class="button">Learn More</a>
             </div>
             <!-- Add more projects here -->
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>You can reach me at email@balarishi213@gmail.com</p>
+            <p>You can reach me at email@example.com</p>
+            <a href="mailto:email@example.com" class="button">Email Me</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 rishibala</p>
+        <p>&copy; 2024 Your Name</p>
     </footer>
 </body>
 </html>
