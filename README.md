@@ -35,7 +35,7 @@
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
-                <p>Write something about yourself here. For example, describe your background, education, skills, and interests.</p>
+                <p>Write something about yourself here.</p>
             </div>
         </section>
         <section id="projects" class="section">
@@ -43,7 +43,7 @@
                 <h2>Projects</h2>
                 <div class="project">
                     <h3>Project Title</h3>
-                    <p>Description of the project. Provide details about the project's purpose, technologies used, and your contributions.</p>
+                    <p>Description of the project.</p>
                     <img src="project_image.jpg" alt="Project Image">
                     <a href="#" class="button">Learn More</a>
                 </div>
@@ -53,8 +53,8 @@
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p>You can reach me at <a href="mailto:your_email@example.com">your_email@example.com</a>. Feel free to email me for inquiries, collaborations, or just to say hello!</p>
-                <a href="mailto:your_email@example.com" class="button">Email Me</a>
+                <p>You can reach me at email@example.com</p>
+                <a href="mailto:email@example.com" class="button">Email Me</a>
             </div>
         </section>
     </main>
