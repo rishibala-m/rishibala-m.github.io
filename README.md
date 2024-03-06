@@ -8,31 +8,48 @@
 </head>
 <body>
     <header>
-        <h1>RISHI WEDS SUSHMA</h1>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="about">
-            <h2>DATE AND VENUE</h2>
-            <p>22.11.2025 AND SHIVAN TEMPLE ,PARAMAKUDI.</p>
-        </section>
-        <section id="projects">
-            <h2>GREATINGS FROM </h2>
-            <div class="project">
-                <h3>SUBRAMANIYAN , ARYALEESWARI</h3>
-                <h3>MURUGAN,SUTHA</h3>
-              
-                <a href="#" class="button">Learn More</a>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Write something about yourself here.</p>
             </div>
-            <!-- Add more projects here -->
         </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach me at email@example.com</p>
-            <a href="mailto:BALARISHI213@GMAIL.COM" class="button">Email Me</a>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p>Description of the project.</p>
+                    <img src="project_image.jpg" alt="Project Image">
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>You can reach me at email@example.com</p>
+                <a href="mailto:email@example.com" class="button">Email Me</a>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024RISHISUSHMA</p>
+        <div class="container">
+            <p>&copy; 2024 Your Name</p>
+        </div>
     </footer>
 </body>
 </html>
