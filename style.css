@@ -1,12 +1,13 @@
-/* Import Roboto font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
 body {
     font-family: 'Roboto', sans-serif; /* Roboto font */
     margin: 0;
     padding: 0;
-    background-color: #9C27B0; /* Purple color background */
+    background-image: url('aii.webp'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background */
     height: 100vh;
+    overflow-y: scroll; /* Enable vertical scrolling */
 }
 
 header {
@@ -14,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(156, 39, 176, 0.8); /* Purple shade background with higher opacity */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     color: #fff;
 }
 
@@ -34,7 +35,7 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px; /* Adjusted the border-radius for a slight rounding */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for buttons */
+    background-color: rgba(128, 128, 128, 0.5); /* Gray background for buttons */
 }
 
 nav a:hover {
@@ -52,4 +53,28 @@ nav a:hover {
 
 .toggle-switch {
     display: inline-block;
-    w
+    width: 40px;
+    height: 20px;
+    border-radius: 10px; /* Rounded toggle switch */
+    background-color: #808080; /* Gray color */
+    cursor: pointer;
+}
+
+.toggle-slider {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%; /* Round slider */
+    background-color: #fff; /* White background for slider */
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox {
+    display: none; /* Hide the actual checkbox */
+}
+
+.toggle-checkbox:checked + .toggle-switch .toggle-slider {
+    transform: translateX(20px); /* Move the slider to the right when checked */
+}
