@@ -1,5 +1,8 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif; /* Roboto font */
     margin: 0;
     padding: 0;
     background-color: #9C27B0; /* Purple color background */
@@ -11,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(156, 39, 176, 0.5); /* Purple shade background */
+    background-color: rgba(156, 39, 176, 0.8); /* Purple shade background with higher opacity */
     color: #fff;
 }
 
@@ -29,12 +32,24 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px; /* Padding for button-shaped structure */
-    border-radius: 20px; /* Rounded corners for button shape */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for button */
+    padding: 10px 20px;
+    border-radius: 5px; /* Adjusted the border-radius for a slight rounding */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for buttons */
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background on hover */
-    color: #000; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background on hover */
+    color: #9C27B0; /* Purple text color on hover */
 }
+
+/* Toggle Styling */
+.toggle-container {
+    display: inline-block;
+    background-color: #fff; /* White background */
+    padding: 5px 10px;
+    border-radius: 20px; /* Rounded corners */
+}
+
+.toggle-switch {
+    display: inline-block;
+    w
