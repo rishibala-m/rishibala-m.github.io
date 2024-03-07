@@ -2,10 +2,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-image: url("ai.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f44336; /* Red color background */
     height: 100vh;
 }
 
