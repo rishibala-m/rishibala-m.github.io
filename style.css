@@ -6,7 +6,7 @@ body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-.header-container {
+.header-container { 
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     color: #fff;
     width: 100%;
 }
