@@ -2,7 +2,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-image: url("ai.webp"); 
+    background-image: url("ai.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    background-color: rgba(255, 0, 0, 0.5); /* Red shade background */
     color: #fff;
 }
 
@@ -31,4 +31,13 @@ nav li {
 
 nav a {
     color: #fff;
-    text-decoration:
+    text-decoration: none;
+    padding: 10px 20px; /* Padding for button-shaped structure */
+    border-radius: 20px; /* Rounded corners for button shape */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for button */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background on hover */
+    color: #000; /* Change text color on hover */
+}
