@@ -78,3 +78,23 @@ nav a:hover {
 .toggle-checkbox:checked + .toggle-switch .toggle-slider {
     transform: translateX(20px); /* Move the slider to the right when checked */
 }
+
+/* Contact section styling */
+#contact {
+    text-align: center;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-right: 10px;
+}
+
+#contact ul li:last-child {
+    margin-right: 0;
+}
