@@ -87,28 +87,3 @@
 
 </body>
 </html>
-document.addEventListener('DOMContentLoaded', function() {
-    var content = document.querySelector('.content');
-
-    function checkScroll() {
-        var scrollPos = window.innerHeight / 2;
-        var contentPos = content.getBoundingClientRect().top;
-
-        if (contentPos < scrollPos) {
-            content.classList.add('animate');
-        }
-    }
-
-    window.addEventListener('scroll', checkScroll);
-});
-
-.content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.content.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
