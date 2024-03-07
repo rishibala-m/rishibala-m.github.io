@@ -2,16 +2,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    background-image: url("ai.webph"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-.header-container { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999; /* Ensure header is on top */
 }
 
 header {
@@ -19,9 +14,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
     color: #fff;
-    width: 100%;
 }
 
 nav {
@@ -37,20 +31,4 @@ nav li {
 
 nav a {
     color: #fff;
-    text-decoration: none; /* Fix typo: "text-decoration:" should be "text-decoration: none;" */
-}
-
-.content {
-    padding-top: 100px; /* Ensure content is below fixed header */
-    background-image: url("ai.webp"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: auto; /* Allow content scrolling */
-}
-
-.section {
-    padding: 20px;
-    color: #000; /* Change text color to black for readability */
-}
+    text-decoration:
