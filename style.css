@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding */
     background-color: #000; /* Pure black background */
     color: #fff;
 }
@@ -57,42 +57,6 @@ nav a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     color: #9c27b0;
-}
-
-.toggle-container {
-    display: inline-block;
-    background-color: #fff;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-.toggle-switch {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: #808080;
-    cursor: pointer;
-}
-
-.toggle-slider {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff; /* Change toggle color to white */
-    transition: transform 0.3s ease;
-}
-
-.toggle-checkbox {
-    display: none;
-}
-
-.toggle-checkbox:checked + .toggle-switch .toggle-slider {
-    transform: translateX(20px);
-    background-color: #fff; /* Ensure toggle color remains white when checked */
 }
 
 /* Contact section styling */
