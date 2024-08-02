@@ -52,11 +52,13 @@ nav a {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: rgba(128, 128, 128, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transition for animation */
 }
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     color: #9c27b0;
+    transform: scale(1.1); /* Add scale transform for animation */
 }
 
 /* Contact section styling */
