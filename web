@@ -1,3 +1,0 @@
-git add images/
-git commit -m "Added images folder"
-git push origin main
