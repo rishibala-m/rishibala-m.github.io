@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
     <div class="header-left">
         <h1>RISHI BALA MURUGAN</h1>
@@ -16,10 +17,11 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="next-page.html" class="freelancing-button">For Freelancing</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="toggle-container">
@@ -47,8 +49,8 @@
                 <h4>EI Systems</h4>
                 <p>07/01/24 - 10/03/24</p>
                 <ul>
-                    <li>As a Machine Learning Intern at EI Systems, I led the development and deployment of advanced algorithms to optimize product functionality. Responsibilities included data analysis, model evaluation, and seamless integration with cross-functional teams. I documented the entire pipeline and effectively communicated technical findings to non-technical stakeholders.</li>
-                    <li>During my tenure at EI Systems, I contributed to a project focused on implementing a robust recommendation system leveraging machine learning methodologies. I actively participated in designing and training the recommendation algorithms, resulting in notable enhancements in user engagement and retention metrics for the company's platform. This project underscored my proficiency in machine learning techniques and demonstrated my capacity to deliver impactful solutions aligned with organizational objectives.</li>
+                    <li>As a Machine Learning Intern at EI Systems, I led the development and deployment of advanced algorithms to optimize product functionality. Responsibilities included data analysis, model evaluation, and seamless integration with cross-functional teams.</li>
+                    <li>I contributed to a project focused on implementing a robust recommendation system leveraging machine learning methodologies. This resulted in enhancements in user engagement and retention metrics.</li>
                 </ul>
             </li>
         </ul>
@@ -60,19 +62,19 @@
             <li>
                 <h3>Technical Skills</h3>
                 <ul>
-                    <li>Proficiency in Machine Learning Algorithms: Understanding and implementation of various machine learning algorithms such as linear regression, decision trees, random forests, neural networks, etc.</li>
-                    <li>Strong Programming Skills: Mastery of programming languages such as Python and SQL, essential for developing robust and scalable software applications.</li>
-                    <li>Data Visualization Tools: Expertise in tools like Power BI and MS Excel for creating insightful and interactive data visualizations.</li>
-                    <li>Database Management: Hands-on experience in designing and managing SQL databases for efficient data storage and retrieval.</li>
-                    <li>UI/UX Design: Proficient in Figma for designing intuitive and user-friendly interfaces, ensuring seamless user experiences.</li>
+                    <li>Machine Learning Algorithms: Linear regression, decision trees, neural networks, etc.</li>
+                    <li>Programming: Python, SQL.</li>
+                    <li>Data Visualization: Power BI, MS Excel.</li>
+                    <li>Database Management: SQL database design.</li>
+                    <li>UI/UX Design: Figma.</li>
                 </ul>
             </li>
             <li>
                 <h3>Soft Skills</h3>
                 <ul>
-                    <li>Effective Communication: The ability to convey complex technical concepts clearly and concisely to both technical and non-technical stakeholders, fostering collaboration and understanding within multidisciplinary teams.</li>
-                    <li>Problem-Solving: A strong aptitude for identifying and addressing challenges in software development and AI engineering, coupled with the creativity to devise innovative solutions that meet project requirements and business objectives.</li>
-                    <li>Adaptability: The capacity to quickly learn and adapt to new technologies, methodologies, and project requirements, enabling seamless navigation of evolving project landscapes and industry trends.</li>
+                    <li>Effective Communication.</li>
+                    <li>Problem-Solving.</li>
+                    <li>Adaptability.</li>
                 </ul>
             </li>
         </ul>
@@ -82,7 +84,7 @@
         <h2>Projects</h2>
         <h3>CogniGuide: Empowering Minds, Enhancing Lives</h3>
         <p>CogniGuide is a cutting-edge project designed to revolutionize cognitive enhancement and personal development. Our platform offers a curated collection of scientifically-backed tools and resources, meticulously crafted to optimize mental performance and well-being.</p>
-        <p>Through advanced algorithms and intuitive interfaces, CogniGuide delivers personalized guidance tailored to individual needs and goals. From memory improvement techniques to stress management strategies, our platform equips users with the knowledge and skills needed to unlock their full potential.</p>
+        <p>Through advanced algorithms and intuitive interfaces, CogniGuide delivers personalized guidance tailored to individual needs and goals.</p>
     </section>
 
     <section id="contact">
@@ -93,8 +95,6 @@
             <li>Phone: 6384645968</li>
         </ul>
         <p>Feel free to reach out to me for any questions or opportunities!</p>
-        <a href="next-page.html" class="next-page-button">For Freelancing</a>
-</section>
     </section>
 </main>
 
@@ -107,14 +107,12 @@
     const toggleCheckbox = document.querySelector('.toggle-checkbox');
     const body = document.body;
 
-    // Check if dark mode is enabled in localStorage
     const savedMode = localStorage.getItem('dark-mode');
     if (savedMode === 'enabled') {
         body.classList.add('dark-mode');
         toggleCheckbox.checked = true;
     }
 
-    // Toggle dark mode on switch change
     toggleCheckbox.addEventListener('change', function () {
         if (this.checked) {
             body.classList.add('dark-mode');
@@ -124,20 +122,16 @@
             localStorage.setItem('dark-mode', 'disabled');
         }
     });
-</script>
-<script>
+
     // Smooth scrolling and button animation
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent default anchor behavior
-
-            // Add animation to the clicked button
+            e.preventDefault();
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = 'scale(1)';
             }, 200);
 
-            // Smooth scroll to the target section
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
             targetSection.scrollIntoView({
@@ -147,53 +141,6 @@
         });
     });
 </script>
-    
-<script>
-    // JavaScript for dark mode
-    const toggleCheckbox = document.querySelector('.toggle-checkbox');
-    const body = document.body;
 
-    // Check if dark mode is enabled in localStorage
-    const savedMode = localStorage.getItem('dark-mode');
-    if (savedMode === 'enabled') {
-        body.classList.add('dark-mode');
-        toggleCheckbox.checked = true;
-    }
-
-    // Toggle dark mode on switch change
-    toggleCheckbox.addEventListener('change', function () {
-        if (this.checked) {
-            body.classList.add('dark-mode');
-            localStorage.setItem('dark-mode', 'enabled');
-        } else {
-            body.classList.remove('dark-mode');
-            localStorage.setItem('dark-mode', 'disabled');
-        }
-    });
-
-    // Smooth scrolling and button animation
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent default anchor behavior
-
-            // Add animation to the clicked button
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 200);
-
-            // Smooth scroll to the target section
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({
-                behavior: 'smooth', // Smooth scrolling
-                block: 'start' // Align to the top of the section
-            });
-        });
-    });
-</script>
-
-</body>
-</html>
 </body>
 </html>
