@@ -146,5 +146,53 @@
         });
     });
 </script>
+    
+<script>
+    // JavaScript for dark mode
+    const toggleCheckbox = document.querySelector('.toggle-checkbox');
+    const body = document.body;
+
+    // Check if dark mode is enabled in localStorage
+    const savedMode = localStorage.getItem('dark-mode');
+    if (savedMode === 'enabled') {
+        body.classList.add('dark-mode');
+        toggleCheckbox.checked = true;
+    }
+
+    // Toggle dark mode on switch change
+    toggleCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('dark-mode', 'enabled');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('dark-mode', 'disabled');
+        }
+    });
+
+    // Smooth scrolling and button animation
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default anchor behavior
+
+            // Add animation to the clicked button
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 200);
+
+            // Smooth scroll to the target section
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({
+                behavior: 'smooth', // Smooth scrolling
+                block: 'start' // Align to the top of the section
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
 </body>
 </html>
