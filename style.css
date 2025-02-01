@@ -396,6 +396,7 @@ body.dark-mode footer {
     header {
         flex-direction: column;
         text-align: center;
+        padding: 10px;
     }
 
     .header-right {
@@ -403,31 +404,38 @@ body.dark-mode footer {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Arrange navigation links horizontally */
+        flex-wrap: wrap; /* Allow wrapping if too many links */
+        justify-content: center;
     }
 
     nav li {
-        margin: 10px 0;
+        margin: 5px; /* Reduce spacing between links */
+    }
+
+    nav a {
+        padding: 8px 12px; /* Smaller padding for mobile */
+        font-size: 0.9rem; /* Smaller font size for mobile */
     }
 
     section {
-        padding: 40px 10px;
-        margin: 10px;
+        padding: 30px 10px; /* Reduce padding for mobile */
+        margin: 10px; /* Reduce margin for mobile */
     }
 
     section h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Smaller heading size for mobile */
     }
 
     section p, section ul {
-        font-size: 1rem;
+        font-size: 1rem; /* Smaller text size for mobile */
     }
 
     #contact ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack contact links vertically */
     }
 
     #contact ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Add spacing between contact links */
     }
 }
