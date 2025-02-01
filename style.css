@@ -9,7 +9,8 @@ body {
     background-attachment: fixed;
     height: 100vh;
     overflow-y: scroll;
-    color: #333; /* Dark Gray for text */
+    color: #FFFFFF; /* White text */
+    background-color: #000000; /* Black background */
 }
 
 /* Header Styles */
@@ -18,12 +19,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #1A73E8; /* Navy Blue */
+    background-color: #000000; /* Black */
     color: #FFFFFF; /* White text */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 .header-left h1 {
@@ -35,7 +36,7 @@ header {
 .header-left h2 {
     font-size: 1.2rem;
     margin: 0;
-    color: #FF6F61; /* Coral accent */
+    color: #FF0000; /* Bright Red accent */
     animation: fadeInDown 1.2s ease-in-out;
 }
 
@@ -66,7 +67,7 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3); /* Lighter semi-transparent white */
-    color: #FF6F61; /* Coral accent */
+    color: #FF0000; /* Bright Red accent */
     transform: scale(1.1);
 }
 
@@ -113,7 +114,7 @@ nav a:hover {
 }
 
 .toggle-checkbox:checked + .toggle-slider {
-    background-color: #FF6F61; /* Coral accent */
+    background-color: #FF0000; /* Bright Red accent */
 }
 
 .toggle-checkbox:checked + .toggle-slider:before {
@@ -123,16 +124,16 @@ nav a:hover {
 /* Section Animations */
 section {
     padding: 60px 20px;
-    background-color: rgba(245, 245, 245, 0.9); /* Light Gray background */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
     animation: fadeInUp 1s ease-in-out;
 }
 
 section h2 {
     font-size: 2rem;
-    color: #1A73E8; /* Navy Blue */
+    color: #FF0000; /* Bright Red accent */
     margin-bottom: 20px;
     animation: fadeInLeft 1s ease-in-out;
 }
@@ -140,7 +141,7 @@ section h2 {
 section p, section ul {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #333; /* Dark Gray for text */
+    color: #FFFFFF; /* White text */
     animation: fadeInRight 1s ease-in-out;
 }
 
@@ -153,24 +154,24 @@ section p, section ul {
 #experience li {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgba(26, 115, 232, 0.1); /* Light Navy Blue */
+    background-color: rgba(255, 0, 0, 0.1); /* Light Red */
     border-radius: 10px;
     animation: fadeInUp 1s ease-in-out;
 }
 
 #experience li h3 {
     font-size: 1.5rem;
-    color: #1A73E8; /* Navy Blue */
+    color: #FF0000; /* Bright Red accent */
 }
 
 #experience li h4 {
     font-size: 1.2rem;
-    color: #333; /* Dark Gray */
+    color: #FFFFFF; /* White text */
 }
 
 #experience li p {
     font-size: 1rem;
-    color: #555; /* Gray */
+    color: #CCCCCC; /* Light Gray */
 }
 
 /* Skills Section */
@@ -186,7 +187,7 @@ section p, section ul {
 
 #skills li h3 {
     font-size: 1.5rem;
-    color: #1A73E8; /* Navy Blue */
+    color: #FF0000; /* Bright Red accent */
 }
 
 #skills li ul {
@@ -201,14 +202,14 @@ section p, section ul {
 
 #projects h3 {
     font-size: 1.8rem;
-    color: #1A73E8; /* Navy Blue */
+    color: #FF0000; /* Bright Red accent */
     animation: fadeInDown 1s ease-in-out;
 }
 
 #projects p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #333; /* Dark Gray */
+    color: #FFFFFF; /* White text */
     animation: fadeInUp 1s ease-in-out;
 }
 
@@ -234,20 +235,20 @@ section p, section ul {
 }
 
 #contact ul li a {
-    color: #1A73E8; /* Navy Blue */
+    color: #FF0000; /* Bright Red accent */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 #contact ul li a:hover {
-    color: #FF6F61; /* Coral accent */
+    color: #CC0000; /* Darker Red */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1A73E8; /* Navy Blue */
+    background-color: #000000; /* Black */
     color: #FFFFFF; /* White text */
     margin-top: 40px;
     animation: fadeInUp 1s ease-in-out;
@@ -322,15 +323,15 @@ body.dark-mode nav a {
 
 body.dark-mode nav a:hover {
     background-color: rgba(255, 255, 255, 0.3); /* Lighter semi-transparent white */
-    color: #FF6F61; /* Coral accent */
+    color: #FF0000; /* Bright Red accent */
 }
 
 body.dark-mode #contact ul li a {
-    color: #FF6F61; /* Coral accent */
+    color: #FF0000; /* Bright Red accent */
 }
 
 body.dark-mode #contact ul li a:hover {
-    color: #1A73E8; /* Navy Blue */
+    color: #CC0000; /* Darker Red */
 }
 
 body.dark-mode footer {
