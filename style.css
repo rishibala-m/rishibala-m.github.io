@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('v748-toon-103.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    overflow-y: scroll;
-    color: #FFFFFF; /* White text */
-    background-color: #000000; /* Black background */
+    background-color: #FFFFFF; /* Light mode background */
+    color: #1D1D1F; /* Light mode text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #000000; /* Dark mode background */
+    color: #F5F5F7; /* Dark mode text */
 }
 
 /* Header Styles */
@@ -18,13 +18,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #000000; /* Black */
-    color: #FFFFFF; /* White text */
+    padding: 20px;
+    background-color: #FFFFFF; /* Light mode header */
+    color: #1D1D1F; /* Light mode text */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode header {
+    background-color: #000000; /* Dark mode header */
+    color: #F5F5F7; /* Dark mode text */
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 }
 
 .header-left h1 {
@@ -36,8 +43,12 @@ header {
 .header-left h2 {
     font-size: 1.2rem;
     margin: 0;
-    color: #FF0000; /* Bright Red accent */
+    color: #007AFF; /* Apple Blue accent */
     animation: fadeInDown 1.2s ease-in-out;
+}
+
+body.dark-mode .header-left h2 {
+    color: #0A84FF; /* Apple Blue for dark mode */
 }
 
 .header-right {
@@ -57,18 +68,25 @@ nav li {
 }
 
 nav a {
-    color: #FFFFFF; /* White text */
+    color: #1D1D1F; /* Light mode text */
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode nav a {
+    color: #F5F5F7; /* Dark mode text */
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Lighter semi-transparent white */
-    color: #FF0000; /* Bright Red accent */
-    transform: scale(1.1);
+    background-color: rgba(0, 122, 255, 0.1); /* Light blue hover */
+    color: #007AFF; /* Apple Blue accent */
+}
+
+body.dark-mode nav a:hover {
+    background-color: rgba(10, 132, 255, 0.1); /* Dark mode hover */
+    color: #0A84FF; /* Apple Blue for dark mode */
 }
 
 /* Toggle Switch Animation */
@@ -114,7 +132,11 @@ nav a:hover {
 }
 
 .toggle-checkbox:checked + .toggle-slider {
-    background-color: #FF0000; /* Bright Red accent */
+    background-color: #007AFF; /* Apple Blue accent */
+}
+
+body.dark-mode .toggle-checkbox:checked + .toggle-slider {
+    background-color: #0A84FF; /* Apple Blue for dark mode */
 }
 
 .toggle-checkbox:checked + .toggle-slider:before {
@@ -124,25 +146,39 @@ nav a:hover {
 /* Section Animations */
 section {
     padding: 60px 20px;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    background-color: #F5F5F7; /* Light mode section background */
     margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: fadeInUp 1s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode section {
+    background-color: #1C1C1E; /* Dark mode section background */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 section h2 {
     font-size: 2rem;
-    color: #FF0000; /* Bright Red accent */
+    color: #007AFF; /* Apple Blue accent */
     margin-bottom: 20px;
     animation: fadeInLeft 1s ease-in-out;
+}
+
+body.dark-mode section h2 {
+    color: #0A84FF; /* Apple Blue for dark mode */
 }
 
 section p, section ul {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #FFFFFF; /* White text */
+    color: #1D1D1F; /* Light mode text */
     animation: fadeInRight 1s ease-in-out;
+}
+
+body.dark-mode section p, body.dark-mode section ul {
+    color: #F5F5F7; /* Dark mode text */
 }
 
 /* Experience Section */
@@ -154,24 +190,40 @@ section p, section ul {
 #experience li {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgba(255, 0, 0, 0.1); /* Light Red */
-    border-radius: 10px;
+    background-color: rgba(0, 122, 255, 0.1); /* Light blue background */
+    border-radius: 12px;
     animation: fadeInUp 1s ease-in-out;
+}
+
+body.dark-mode #experience li {
+    background-color: rgba(10, 132, 255, 0.1); /* Dark mode background */
 }
 
 #experience li h3 {
     font-size: 1.5rem;
-    color: #FF0000; /* Bright Red accent */
+    color: #007AFF; /* Apple Blue accent */
+}
+
+body.dark-mode #experience li h3 {
+    color: #0A84FF; /* Apple Blue for dark mode */
 }
 
 #experience li h4 {
     font-size: 1.2rem;
-    color: #FFFFFF; /* White text */
+    color: #1D1D1F; /* Light mode text */
+}
+
+body.dark-mode #experience li h4 {
+    color: #F5F5F7; /* Dark mode text */
 }
 
 #experience li p {
     font-size: 1rem;
-    color: #CCCCCC; /* Light Gray */
+    color: #555; /* Light mode text */
+}
+
+body.dark-mode #experience li p {
+    color: #CCCCCC; /* Dark mode text */
 }
 
 /* Skills Section */
@@ -187,7 +239,11 @@ section p, section ul {
 
 #skills li h3 {
     font-size: 1.5rem;
-    color: #FF0000; /* Bright Red accent */
+    color: #007AFF; /* Apple Blue accent */
+}
+
+body.dark-mode #skills li h3 {
+    color: #0A84FF; /* Apple Blue for dark mode */
 }
 
 #skills li ul {
@@ -202,15 +258,23 @@ section p, section ul {
 
 #projects h3 {
     font-size: 1.8rem;
-    color: #FF0000; /* Bright Red accent */
+    color: #007AFF; /* Apple Blue accent */
     animation: fadeInDown 1s ease-in-out;
+}
+
+body.dark-mode #projects h3 {
+    color: #0A84FF; /* Apple Blue for dark mode */
 }
 
 #projects p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #FFFFFF; /* White text */
+    color: #1D1D1F; /* Light mode text */
     animation: fadeInUp 1s ease-in-out;
+}
+
+body.dark-mode #projects p {
+    color: #F5F5F7; /* Dark mode text */
 }
 
 /* Contact Section */
@@ -235,23 +299,37 @@ section p, section ul {
 }
 
 #contact ul li a {
-    color: #FF0000; /* Bright Red accent */
+    color: #007AFF; /* Apple Blue accent */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+body.dark-mode #contact ul li a {
+    color: #0A84FF; /* Apple Blue for dark mode */
+}
+
 #contact ul li a:hover {
-    color: #CC0000; /* Darker Red */
+    color: #005BB5; /* Darker blue */
+}
+
+body.dark-mode #contact ul li a:hover {
+    color: #007AFF; /* Apple Blue for dark mode */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #000000; /* Black */
-    color: #FFFFFF; /* White text */
+    background-color: #F5F5F7; /* Light mode footer */
+    color: #1D1D1F; /* Light mode text */
     margin-top: 40px;
     animation: fadeInUp 1s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode footer {
+    background-color: #1C1C1E; /* Dark mode footer */
+    color: #F5F5F7; /* Dark mode text */
 }
 
 /* Keyframe Animations */
@@ -297,46 +375,6 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #FFFFFF; /* White text */
-}
-
-body.dark-mode header {
-    background-color: #1F1F1F; /* Dark header */
-    color: #FFFFFF; /* White text */
-}
-
-body.dark-mode section {
-    background-color: #1F1F1F; /* Dark section background */
-    color: #FFFFFF; /* White text */
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode nav a {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    color: #FFFFFF; /* White text */
-}
-
-body.dark-mode nav a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Lighter semi-transparent white */
-    color: #FF0000; /* Bright Red accent */
-}
-
-body.dark-mode #contact ul li a {
-    color: #FF0000; /* Bright Red accent */
-}
-
-body.dark-mode #contact ul li a:hover {
-    color: #CC0000; /* Darker Red */
-}
-
-body.dark-mode footer {
-    background-color: #1F1F1F; /* Dark footer */
-    color: #FFFFFF; /* White text */
 }
 
 /* Responsive Design */
