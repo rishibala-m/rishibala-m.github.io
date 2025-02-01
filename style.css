@@ -338,3 +338,44 @@ body.dark-mode footer {
     background-color: #1F1F1F; /* Dark footer */
     color: #FFFFFF; /* White text */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 40px 10px;
+        margin: 10px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+
+    #contact ul {
+        flex-direction: column;
+    }
+
+    #contact ul li {
+        margin: 10px 0;
+    }
+}
