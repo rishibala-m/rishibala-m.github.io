@@ -1,0 +1,23 @@
+.next-page-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007AFF; /* Apple Blue accent */
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.next-page-button:hover {
+    background-color: #005BB5; /* Darker blue on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+body.dark-mode .next-page-button {
+    background-color: #0A84FF; /* Apple Blue for dark mode */
+}
+
+body.dark-mode .next-page-button:hover {
+    background-color: #007AFF; /* Dark mode hover */
+}
