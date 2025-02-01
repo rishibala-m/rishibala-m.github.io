@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="powerbi-projects.html" class="freelancing-button">Freelancing</a>
+                <li><a href="powerbi-projects.html">Freelancing</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -126,18 +126,20 @@
     // Smooth scrolling and button animation
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 200);
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
 
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         });
     });
 </script>
