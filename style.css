@@ -26,6 +26,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
+    animation: slideDown 0.5s ease-in-out;
 }
 
 body.dark-mode header {
@@ -33,7 +34,30 @@ body.dark-mode header {
     color: #F5F5F7;
 }
 
+/* Header Left */
+.header-left h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.header-left h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #007AFF;
+    animation: fadeInDown 1.2s ease-in-out;
+}
+
+body.dark-mode .header-left h2 {
+    color: #0A84FF;
+}
+
 /* Navigation */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -81,7 +105,7 @@ body.dark-mode #projects {
     background-color: #1C1C1E;
 }
 
-/* Project Images - Consistent Desktop & Mobile View */
+/* Project Images */
 .project-images {
     display: flex;
     justify-content: center;
@@ -103,7 +127,7 @@ body.dark-mode #projects {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Project Buttons */
+/* Buttons */
 .project .btn {
     display: inline-block;
     background: #007AFF;
@@ -129,7 +153,7 @@ body.dark-mode .project .btn:hover {
     background: #007AFF;
 }
 
-/* Make Mobile View Exactly Like Desktop */
+/* Ensure Desktop View on Mobile */
 @media (max-width: 768px) {
     header {
         flex-direction: row;
@@ -171,4 +195,3 @@ body.dark-mode .project .btn:hover {
         max-width: 400px;
     }
 }
-
