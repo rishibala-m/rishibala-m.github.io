@@ -81,7 +81,7 @@ body.dark-mode #projects {
     background-color: #1C1C1E;
 }
 
-/* Project Images - Ensuring Consistent Mobile View */
+/* Project Images - Consistent Desktop & Mobile View */
 .project-images {
     display: flex;
     justify-content: center;
@@ -129,18 +129,18 @@ body.dark-mode .project .btn:hover {
     background: #007AFF;
 }
 
-/* Responsive Design - Ensuring Desktop-like View on Mobile */
+/* Make Mobile View Exactly Like Desktop */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
     }
 
     nav ul {
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     nav li {
@@ -148,15 +148,27 @@ body.dark-mode .project .btn:hover {
     }
 
     nav a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 
     #projects {
-        padding: 40px 10px;
+        padding: 60px 20px;
+        background-color: #F5F5F7;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark-mode #projects {
+        background-color: #1C1C1E;
+    }
+
+    .project-images {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .project-images img {
-        max-width: 100%;
+        max-width: 400px;
     }
 }
+
